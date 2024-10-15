@@ -1,6 +1,9 @@
 import { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 const App: FC = () => {
   return (
@@ -8,9 +11,9 @@ const App: FC = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={"Home"} />
-          <Route path="/about" element={"About"} />
-          <Route path="/projects" element={"Projects"} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
     </main>
