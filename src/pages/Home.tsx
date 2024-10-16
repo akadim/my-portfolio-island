@@ -5,7 +5,6 @@ import Island from "../models/Island";
 import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
-import { is } from "@react-three/fiber/dist/declarations/src/core/utils";
 
 {
   {
@@ -17,6 +16,8 @@ import { is } from "@react-three/fiber/dist/declarations/src/core/utils";
 
 const Home: FC = () => {
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, setCurrentStage] = useState(1);
+
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     const screenPosition = [0, -6.5, -43];
@@ -69,6 +70,7 @@ const Home: FC = () => {
           <Bird />
           <Sky />
           <Island
+            setCurrentStage={setCurrentStage}
             position={[islandPosition[0], islandPosition[1], islandPosition[2]]}
             scale={[islandScale[0], islandScale[1], islandScale[2]]}
             rotation={[islandRotation[0], islandRotation[1], islandRotation[2]]}
