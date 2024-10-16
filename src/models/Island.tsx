@@ -1,4 +1,4 @@
-import { useRef, useEffect, FC } from "react";
+import { useRef, useEffect, FC, Dispatch, SetStateAction } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { animated } from "@react-spring/three";
@@ -22,9 +22,11 @@ type GLTFResult = GLTF & {
 };
 
 type IslandProps = {
-  position: number[];
-  scale: number[];
-  rotation: number[];
+  position: [number, number, number];
+  scale: [number, number, number];
+  rotation: [number, number, number];
+  isRotating: boolean;
+  setIsRotating: Dispatch<SetStateAction<boolean>>;
 };
 
 const Island: FC<IslandProps> = ({ position, scale, rotation }) => {
