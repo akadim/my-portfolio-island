@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
 
 const App: FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </main>
   );

@@ -5,10 +5,12 @@ import github from './github.svg'
 import html from './html.svg'
 import javascript from './javascript.svg'
 import mongodb from './mongodb.svg'
-import motion from './motion.svg'
+import angular from './angular.svg'
 import mui from './mui.svg'
 import nextjs from './nextjs.svg'
 import nodejs from './nodejs.svg'
+import java from './java.svg'
+import springboot from './spring_boot.svg'
 import react from './react.svg'
 import redux from './redux.svg'
 import sass from './sass.svg'
@@ -28,32 +30,34 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
 export {
-    css,
-    express,
-    git,
-    github,
-    html,
-    javascript,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    react,
-    redux,
-    sass,
-    tailwindcss,
-    typescript,
-    linkedin,
-    twitter,
-    car,
-    estate,
-    pricewise,
-    snapgram,
-    summiz,
-    threads,
-    arrow,
-    contact,
-    soundon,
-    soundoff
+  css,
+  express,
+  git,
+  github,
+  html,
+  javascript,
+  mongodb,
+  angular,
+  mui,
+  nextjs,
+  nodejs,
+  java,
+  springboot,
+  react,
+  redux,
+  sass,
+  tailwindcss,
+  typescript,
+  linkedin,
+  twitter,
+  car,
+  estate,
+  pricewise,
+  snapgram,
+  summiz,
+  threads,
+  arrow,
+  contact,
+  soundon,
+  soundoff
 }
