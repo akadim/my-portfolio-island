@@ -162,21 +162,24 @@ const Island: FC<IslandProps> = ({
   );
 
   useFrame(() => {
-    if (isRotating) {
+    // If not rotating, apply damping to slow down the rotation (smoothly)
+    if (!isRotating) {
+      // Apply damping factor
       rotationSpeed.current *= dampingFactor;
 
-      if (Math.abs(rotationSpeed.current) < 0.01) {
+      // Stop rotation when speed is very small
+      if (Math.abs(rotationSpeed.current) < 0.001) {
         rotationSpeed.current = 0;
       }
 
       islandRef.current!.rotation.y += rotationSpeed.current;
     } else {
+      // When rotating, determine the current stage based on island's orientation
       const rotation = islandRef.current!.rotation.y;
-
-      // Normalize the rotation value to the range of [0, 2 * Math.PI]
       const normalizedRotation =
-        (rotation * (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
+        ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
+      // Set the current stage based on the island's orientation
       switch (true) {
         case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
           setCurrentStage(4);
@@ -191,7 +194,7 @@ const Island: FC<IslandProps> = ({
           setCurrentStage(1);
           break;
         default:
-          setCurrentStage(0);
+          setCurrentStage(null);
       }
     }
   });
