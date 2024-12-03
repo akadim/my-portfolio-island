@@ -24,6 +24,8 @@ import {
   typescript,
   haiku,
   food,
+  php,
+  laravel,
 } from "../assets/icons/index";
 
 export const skills = [
@@ -98,6 +100,16 @@ export const skills = [
     type: "Backend",
   },
   {
+    imageUrl: php,
+    name: "PHP",
+    type: "Backend",
+  },
+  {
+    imageUrl: laravel,
+    name: "Laravel",
+    type: "Backend",
+  },
+  {
     imageUrl: redux,
     name: "Redux",
     type: "State Management",
@@ -127,9 +139,9 @@ export const experiences = [
     iconBg: "#accbe1",
     date: "January 2023 - February 2024",
     points: [
-      "Developing and maintaining web applications using React.js and Java Spring Boot.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Engineered an innovative SaaS platform tailored to optimize the Salesforce DevOps process for a fast-growing startup; collaborated with cross-functional teams leading to identification of three major inefficiencies resulting in streamlined operations",
+      "Implementing automated testing and code review processes, resulting in a 25% reduction in post-deployment bugs and maintaining high code quality standards.",
+      "Writing detailed documentation for the codebase, facilitating easy comprehension and maintenance for future developers.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
@@ -140,10 +152,10 @@ export const experiences = [
     iconBg: "#fbc3bc",
     date: "February 2022 - Feb 2022",
     points: [
-      "Developing and maintaining the UI parts of a simulation game Using Angular.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Spearheaded the development and management of five gaming-related web projects, resulting in a 40% increase in user engagement and retention over a six-month period through enhanced user interfaces and interactive features.",
+      "Debugging and testing code (Unit Testing, Functional Testing) based on feedback to ensure everything functions as intended and without any problem.",
+      "Working collaboratively and communicating efficiently with cross-functional teams to deliver high-quality frontend solutions.  ",
+      "Writing detailed documentation for the codebase, facilitating easy comprehension and maintenance for future developers.",
     ],
   },
   {
@@ -153,10 +165,10 @@ export const experiences = [
     iconBg: "#b7e4c7",
     date: "Jan 2018 - Jan 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other Java/Spring Boot.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing, managing, and testing scalable and responsive projects.",
+      "Designing the User Interfaces and User Experience of the web applications.",
+      "Working collaboratively and communicating efficiently with cross-functional teams to deliver high-quality frontend solutions.",
+      "Writing detailed documentation for the codebase, facilitating easy comprehension and maintenance for future developers.",
     ],
   },
   {
@@ -166,8 +178,8 @@ export const experiences = [
     iconBg: "#a2d2ff",
     date: "Jan 2012 - Jan 2018",
     points: [
-      "Developing and maintaining Freelance web applications using React.js, Angular, Java/Spring and PHP/Laravel.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Handling and managing the entire lifecycle of various projects on the freelance platform MOSTAQL:",
+      "Making sure to refine the user interface and user experience of the projects",
     ],
   },
 ];
@@ -181,12 +193,12 @@ export const socialLinks = [
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/akadim",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/kadim-ahmed-12b7b233b",
   },
 ];
 
